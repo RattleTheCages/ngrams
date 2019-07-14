@@ -16,7 +16,6 @@ import nltk
 #                                                                               #
 #################################################################################
 def LoadWordlistFromFiles(Wordlist, filename):
-    #ufile = open("words.txt", "r");
     file = open(filename, "r");
     words = []
     for line in file:
