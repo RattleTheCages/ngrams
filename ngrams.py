@@ -9,7 +9,7 @@ import time
 from bst import BinarySearchTree
 from graphEdge import graphEdge
 from graphExe import CreateGraph, ComputeEdgeCountList
-from ngramsIO import LoadWordlistFromFiles, CreateNGramsList, OutputNGrams
+from ngramsIO import LoadWordlistFromFiles, CreateNGramsList, OutputNGrams, OutputNGramsFormattedRDataSet
 
 
 Debug = True
@@ -80,6 +80,7 @@ def main():
     CreateNGramsList(DictionaryReverse, EdgeCount, NGramsList)
 
     OutputNGrams(NGramsList)
+    OutputNGramsFormattedRDataSet(NGramsList, "ngrams.r.set")
 
     if Debug is True:
         print("Finished in %d secs." % (time.time()-startTime))
