@@ -59,8 +59,24 @@ def CreateNGramsList(DictionaryReverse, EdgeCount, NGramsList):
 #                                                                               #
 #################################################################################
 def OutputNGrams(NGramsList):
-    for gram in NGramsList:
-        print(gram)
+    for ngram in NGramsList:
+        print(ngram)
 
+
+#################################################################################
+#                                                                               #
+#  WriteNGramsToFileFormattedRDataSet(NGramsList, filename)                     #
+#                                                                               #
+#  Write to given file the results formatted as an r language data set.         #
+#                                                                               #
+#################################################################################
+def OutputNGramsFormattedRDataSet(NGramsList, filename):
+    file = open(filename, "w");
+    file.write("occurrences word1 word2 word3\n")
+    for ngram in NGramsList:
+        file.write(ngram)
+        file.write('\n')
+
+    file.close()
 
 
