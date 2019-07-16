@@ -80,6 +80,7 @@ def main():
     CreateNGramsList(DictionaryReverse, EdgeCount, NGramsList)
 
     OutputNGrams(NGramsList)
+    OutputNGramsFormattedRDataSet(NGramsList, "ngrams.r.set")
 
     if Debug is True:
         print("Finished in %d secs." % (time.time()-startTime))
