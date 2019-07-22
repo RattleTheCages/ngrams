@@ -1,3 +1,3 @@
 # ngrams
-
-This was a preemployment project given to me by a Phd.  In the one hour interview, the project was breifly written on the white board near the end.  After a couple email exchanges, lately, I have not heard back about the job.
+Create an ngrams list from the given files of word lists (e.g. a book).
+https://en.wikipedia.org/wiki/N-gram
