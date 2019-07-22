@@ -1,3 +1,2 @@
-# ngrams
-Create an ngrams list from the given files of word lists (e.g. a book).
-https://en.wikipedia.org/wiki/N-gram
+# ngrams-stats-using-R-language
+With the output of ngrams, from the Python project, this R project provides various statistics.
